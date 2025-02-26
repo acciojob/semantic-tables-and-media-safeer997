@@ -1,16 +1,86 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 1px;
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        #t-image {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  
 
+    <!-- Semantic Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Charlie</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>List of medias</h2>
+
+    <!-- Ordered List of Media Items -->
+    <ol>
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="Random Image">
+        </li>
+        <li>
+            <video controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+    </ol>
 </body>
-
 </html>
